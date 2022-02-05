@@ -39,6 +39,9 @@ app.use(express.urlencoded({
 
 
 
+app.get("/", (req, res) => {
+    res.render('ProductList.hbs');
+});
 app.get("/ProductList", (req, res) => {
     res.render('ProductList.hbs');
 });
