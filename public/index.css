@@ -1,0 +1,261 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.container {
+    background-color: #C24E00;
+    height: 100vh;
+}
+
+header {
+    width: 50%;
+    background-color: #E5E5E5;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+}
+
+.Regural {
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.logo {
+    font-size: 20px;
+    text-align: center;
+    max-width: 40%;
+    min-width: 20%;
+}
+
+header div h1 {
+    color: red;
+    text-align: center;
+}
+
+table {
+    margin: 10px 0px 20px 0px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    table-layout: fixed;
+    max-width: 800px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.add_product {
+    position: relative;
+    margin: 20px 10px 0px 10px;
+    font-size: 15px;
+    left: 98%;
+    transform: translate(-100%);
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.add_product:hover {
+    background-color: #4e2100;
+    color: white;
+}
+
+th, td {
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+td {
+    font-size: 25px;
+}
+
+.td_input {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    margin: 0 auto;
+    background-color: #976969df;
+}
+
+.add_row {
+    position: absolute;
+    z-index: 4;
+    background-color: rgba(165, 112, 112, 0.918);
+    width: 30%;
+    height: 10vh;
+    top: 40%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.Pname {
+    width: 35%;
+}
+
+.BPrice, .RPrice {
+    width: 23%;
+}
+
+.BPrice, .RPrice, .Pname {
+    height: 40%;
+    background-color: #C24E00;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    border: none;
+}
+
+.submit-btn {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid rgba(255, 0, 0, 0);
+}
+
+.submit-btn, .BPrice, .RPrice, .Pname {
+    padding: 0px 5px;
+}
+
+
+.editCon {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+.cross_btn {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(185, 185, 185);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cross_btn img{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* transform:rotate(180deg) */
+}
+.crud {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    margin: 10px 5px;
+}
+
+.remove-product {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 20px 20px;
+    position: absolute;
+    background-color: rgba(165, 112, 112, 0.918);
+    border-radius: 30px;
+}
+
+.btn-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.ask-btn {
+    height: 40px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #C24E00;
+    border: none;
+    cursor: pointer;
+    transition: 0.33s;
+}
+
+.ask-btn:hover {
+    background-color: #953c00;
+}
+
+.remove {
+    display: none;
+}

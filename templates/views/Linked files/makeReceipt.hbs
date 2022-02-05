@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="images/Favicon.png" href="/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/Header.css">
+
+
+    <link rel="stylesheet" href="/css/Daily Sales/Add_Sold_Item.css">
+    {{!-- This should be at the end --}}
+    <link rel="stylesheet" href="/css/Main Tabel Body.css">
+    <title>Make Receipt | City car Wash</title>
+
+</head>
+
+<body>
+    {{>Header}}
+
+    <div class="container">
+        <div class="Regular">
+            Receipt
+        </div>
+        <span class="page_btn">
+            <button class="add_product" id="add_product">Add sold product
+            </button>
+            <button class="make_receipt" id="Make_Receipt">Make Receipt
+            </button>
+        </span>
+
+        <table id="table_content">
+            <thead>
+                <tr>
+                    <th width="20%">Quantity</th>
+                    <th width="50%">Product Name</th>
+                    <th width="26%">Unit Price</th>
+                    <th width="26%">Quantity price</th>
+                    <th width="10%" style="border: none;"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="LastRowTR" style="background-color:rgb(170, 170, 0)">
+                    <td colspan=2 class="SalesTotalRow">Total</td>
+                    <td colspan=2 class="SalesTotalRow"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    {{!-- remove-product is to remove element when cross button is clicked --}}
+    <div class="add_row_sold_parent remove remove-product" id="add_row_ShowHideID">
+        <div class="add_row" id="add_row">
+            <div class="cross_btn">
+                <img src="images/cross.svg">
+            </div>
+            <input type="search" class="PnameDaily Pname fields" name="Pname" placeholder="Search Sold Products">
+            <input type="submit" class="submit-btn" value="Add" id="form_add_btn">
+        </div>
+    </div>
+
+
+    <script src="JS/index.js"></script>
+
+    <script src="JS/Linked Files/makeReceipt/makeReceipt.js"></script>
+
+</body>
+
+</html>

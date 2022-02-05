@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="images/Favicon.png" href="/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/Header.css">
+    <link rel="stylesheet" href="/css/Search Box.css">
+    <link rel="stylesheet" href="/css/NewProductForm.css">
+    <link rel="stylesheet" href="/css/remove-product.css">
+    {{!-- This should be at the end --}}
+    <link rel="stylesheet" href="/css/Main Tabel Body.css">
+    <title>Product List | City car Wash</title>
+
+</head>
+
+<body>
+    {{>Header}}
+    {{>SearchBox}}
+    {{>receipt}}
+    <div class="container">
+        <div class="Regular">
+            Product List
+        </div>
+        <button class="add_product" id="add_product">Add Product
+        </button>
+
+        <table id="table_content">
+            <thead>
+                <tr>
+                    <th width="10%" style="font-size:20px; margin:0px; padding:0px">Stocked</th>
+                    <th width="50%" >Product Name</th>
+                    <th width="20%">Buying price</th>
+                    <th width="20%">Retail price</th>
+                    <th width="10%" style="border: none;"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- add new product -->
+    {{>NewProductForm}}
+
+
+    <!-- remove Product -->
+    {{>RemoveProductRow}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <script src="JS/DeleteRowBackendFunc.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/adding new product.js"></script>
+    <script src="JS/FetchingTableData.js"></script>
+    <script src="JS/UpdatingTableData.js"></script>
+    <script src="JS/SearchBox.js"></script>
+    {{!--
+    <script src="JS/HideAndShowFields.js"></script> --}}
+
+</body>
+
+</html>

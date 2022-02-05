@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    border-radius: 0vh 0vh 1vh 1vh;
+    background-color: #273a41;
+}
+
+header .logo h1 {
+    color: red;
+    text-align: center;
+}
+.logo {
+    text-align: center;
+    margin: 0px 40px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 40px;
+
+}
+
+.login-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 0px 15px;
+    transition: 0.3s;
+}
+
+.login-container a:hover {
+    color: #6c9c9a;
+}
+
+
+/* nav{
+    border: 1px solid red;
+} */
+
+nav a{
+    text-decoration: underline;
+    color: white;
+    font-size: 25px;
+    margin: 0px 45px;
+
+    /* margin: auto; */
+}
+

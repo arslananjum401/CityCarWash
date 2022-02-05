@@ -1,0 +1,76 @@
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;font-size: 15px;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+.Pname {
+    width: 35%;
+}
+
+.BPrice, .RPrice {
+    width: 20%;
+}
+
+.fields {
+    height: 40%;
+    background-color: #C24E00;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    border: none;
+}
+
+.submit-btn {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid rgba(255, 0, 0, 0);
+}
+
+.Quantity, .submit-btn, .BPrice, .RPrice, .Pname {
+    margin: 0px 5px;
+}
+.BPrice, .RPrice, .Pname {
+    font-size: 15px;
+}
+
+
+.Quantity{
+    width: 12%;
+    font-size: 12px;
+}
+.add_row {
+    position: absolute;
+    z-index: 4;
+    background-color: rgba(165, 112, 112, 0.918);
+    /* background-color: #cc2121ab; */
+    width: 30%;
+    height: 10vh;
+    top: 40%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* .add_row_sold_parent div
+{
+    width:100%;
+} */

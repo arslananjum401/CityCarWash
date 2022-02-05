@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="images/Favicon.png" href="/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/Header.css">
+    <link rel="stylesheet" href="/css/Search Box.css">
+    <link rel="stylesheet" href="/css/NewProductForm.css">
+    <link rel="stylesheet" href="/css/remove-product.css">
+    {{!-- This should be at the end --}}
+    <link rel="stylesheet" href="/css/Main Tabel Body.css">
+    <title>Product List | City car Wash</title>
+
+</head>
+
+<body>
+    {{>Header}}
+    {{>SearchBox}}
+    {{>receipt}}
+    <div class="container">
+        <div class="Regular">
+            <b>Air Filter
+        </b></div>
+        <button class="add_product" id="add_product">Add Product
+        </button>
+
+        <table id="table_content">
+            <thead>
+                <tr>
+              
+                    <th width="45%">Car Name</th>
+                    <th width="22%">Guard</th>
+                    <th width="22%">LEPPON</th>
+                    <th width="5%" style="border: none;"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- add new product -->
+    {{>NewProductForm}}
+
+
+
+   
+
+</body>
+
+</html>
